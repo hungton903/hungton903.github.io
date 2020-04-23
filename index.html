@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </head>
+<meta charset="utf-8">
+<title>LAB TÔN THẤT MINH HÙNG</title>
+<style>
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #1bc2a2;
+}
+
+ul li {
+  display: block;
+  position: relative;
+  float: left;
+  background: #1bc2a2;
+}
+
+/* This hides the dropdowns */
+
+
+li ul { display: none; }
+
+ul li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+}
+
+ul li a:hover { background: #2c3e50; }
+
+/* Display the dropdown */
+
+
+li:hover > ul {
+  display: block;
+  position: absolute;
+}
+
+li:hover li { float: none; }
+
+li:hover a { background: #1bc2a2; }
+
+li:hover li a:hover { background: #2c3e50; }
+
+.main-navigation li ul li { border-top: 0; }
+
+/* Displays second level dropdowns to the right of the first level dropdown */
+
+
+ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+/* Simple clearfix */
+
+
+
+ul:before,
+ul:after {
+  content: " "; 
+  display: table; 
+}
+ul:after { clear: both; }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 15px;
+  background-color: bisque;
+  }
+
+.header-1 {
+  
+  display: flex;
+  justify-content: center;
+  background-color: #1bc2a2;
+}
+
+.header-2 {
+  
+  display: flex;
+  justify-content: right;
+  background-color: #1bc2a2;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+          }
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  }
+
+</style>
+</head>
+
+<body>
+  <div class="header-1">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand/logo -->
+    <img class="navbar-brand" src="logo-01.jpg">
+    
+    <!-- Links -->
+   </nav>
+    <ul class="main-navigation">
+      <li><a href="#">GIỚI THIỆU </a></li>
+      <li><a href="#">SẢN PHẨM</a>
+        <ul>
+          <li><a href="#">GIA DỤNG</a></li>
+          <li><a href="#">CÔNG NGHỆ</a>
+            <ul>
+              <li><a href="#">ĐIỆN THOẠI</a></li>
+              <li><a href="#">LÀM ĐẸP</a></li>
+              <li><a href="#">HOMECARE
+              </a></li>
+            </ul>
+          </li>
+          <li><a href="#">TRANG TRÍ</a>
+            <ul>
+              <li><a href="#">NỘI THẤT</a></li>
+              <li><a href="#">NGOẠI THẤT</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">MẸO VẶT</a>
+        <ul>
+          <li><a href="#">NỘI VÀ NGOẠI THẤT</a></li>
+          <li><a href="#">BEAUTY BLOGER</a></li>
+          <li><a href="#">MẸO VẶT GIA ĐÌNH</a>
+            <ul>
+              <li><a href="#">Portfolios</a></li>
+              <li><a href="#">Testimonials</a></li>
+            </ul>
+          </li>
+          <li><a href="#">NỮ CÔNG GIA CHÁNH</a></li>
+        </ul>
+      </li>
+      <li><a href="#">LIÊN HỆ</a>
+        <ul>
+          <li><a href="#">TRỤ SỞ CHÍNH</a></li>
+          <li><a href="#">HỆ THỐNG CỬA HÀNG</a></li>
+          <li><a href="#">ĐẶT HÀNG ONLINE</a></li>
+       </ul>
+          </li>
+    </ul>
+  </div>
+  <div class="header-2">
+    <form class="form-inline" action="/action_page.php">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-success" type="submit">Search</button>
+    </form>
+</div>
+
+
+
+ 
+<div class="header">
+<h1>ĐÂY LÀ MENU CỦA TÔN THẤT MINH HÙNG</h1>
+<img src="BANNER_BANNER.jpg" style="width:100%">
+</div>
+
+<div class="header">
+    <h1>SẢN PHẨM BÁN CHẠY</h1>
+    <p>Click vào sản phẩm để xem ưu đãi</p>
+    <h2> <a href="https://tiki.vn/">ĐIỆN THOẠI</a>  </h2>
+  </div>
+  
+  <!-- Photo Grid -->
+  <div class="row"> 
+    <div class="column">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+    </div>
+    
+    <div class="column">
+        <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+    </div> 
+     
+    <div class="column">
+        <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+    </div>
+    
+    <div class="column">
+        <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+    </div>
+  </div>
+
+  <div class="header">
+     <h2> <a href="https://tiki.vn/">GIA DỤNG</a>  </h2>
+  </div>
+  
+  <!-- Photo Grid -->
+  <div class="row"> 
+    <div class="column">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+    </div>
+    
+    <div class="column">
+        <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+    </div> 
+     
+    <div class="column">
+        <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+    </div>
+    
+    <div class="column">
+        <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+      <img src="logo-01.jpg" style="width:30%">
+    </div>
+  </div>
+
+  <footer>
+  <p>
+    <div class="header">
+       <address>
+        <h2 style="background-color:Tomato; padding: 15px"> CÔNG TY CP KISA VIỆT NAM  </h2>
+				<blockquote cite="http://www.co-opmart.com.vn/khuyenmai/camnangmuasam.aspx">
+				1900 Quang Trung, Phường 8, Q. Gò Vấp, Tp. HCM, Việt Nam
+			 </address>
+
+    <h2>ĐĂNG KÝ NHẬN EMAIL</h2>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Họ & Tên"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="E-mail"><br><br>
+  <input type="submit" value="ĐĂNG KÝ">
+</form> 
+
+<p>Nếu bạn click vào nút đăng ký hàng ngày chúng tôi sẽ gửi email về cái chương trình ưu đãi đến cho bạn.</p>
+<p> © 2016 - Bản quyền của Công Ty Cổ Phần Ti Ki - Tiki.vn </p>
+   </div>
+</footer>
+
+</body>
+</html>
